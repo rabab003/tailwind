@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namari</title>
+    <link rel="stylesheet" href="/dist/css/style.css" />
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&family=Caveat:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,600;0,700;0,800;1,400;1,500;1,700;1,800&family=Foldit:wght@200;400;600&family=Inter:wght@100;200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,200;1,400;1,600;1,700&family=Montserrat:wght@400;500;600;700&family=Nunito:ital,wght@0,200;0,400;0,600;0,800;1,200&family=Open+Sans:wght@300;400;700&family=Oswald:wght@300;400;600;700&family=Overpass:wght@400;700&family=Poppins:wght@300;400;500;600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&family=Tilt+Prism&family=Work+Sans:ital,wght@0,200;0,300;0,500;1,100;1,300&display=swap"
+        rel="stylesheet" />
+
+    <!-- tailwind css output -->
+    <link rel="stylesheet" href="/dist/output.css" />
+
+    <!-- icons link -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body class="font-mono">
+    <!-- start header section -->
+    <header class="xl:px-40 m-auto container w-[100%] relative capitalize">
+        <nav class="flex relative justify-between items-center p-5">
+            <div class="logo sm:w-[50%]">
+                <a href="#" class=" font-semibold italic fade-in xl:text-[44px] text-[32px]">NAMARI</a>
+            </div>
+            <div class="menuUl w-[100%] hidden lg:block">
+                <ul class="md:flex fade-in gap-6">
+                    <li class=""><a href="#home" class="transition duration-150 ease-out hover:ease-in hover:text-[#d2b356]">Home</a></li>
+                    <li class=""><a class="hover:text-[#d2b356] transition duration-150 ease-out hover:ease-in " href="#about">About</a></li>
+                    <li class=""><a class="hover:text-[#d2b356] transition duration-150 ease-out hover:ease-in " href="#gallery">Gallery</a></li>
+                    <li class=""><a class="hover:text-[#d2b356] transition duration-150 ease-out hover:ease-in " href="#services">Services</a></li>
+                    <li class=""><a class="hover:text-[#d2b356] transition duration-150 ease-out hover:ease-in " href="#Testimonials">Testimonials</a></li>
+                    <li class=""><a class="hover:text-[#d2b356] transition duration-150 ease-out hover:ease-in " href="#clients">clinents</a></li>
+                    <li class=""><a class="hover:text-[#d2b356] transition duration-150 ease-out hover:ease-in " href="#pricing">pricing</a></li>
+                </ul>
+            </div>
+
+            <div class="socail flex items-center gap-4 text-xl">
+                <div class="absolute fade-in bottom-[-84px] rotate-[-0.25turn] right-[-53px] flex items-center">
+                    <i class="cursor-pointer transition duration-150 ease-out hover:ease-in hover:text-[#d2b356] p-2 bx bxl-facebook"><a href="#"></a
+            ></i>
+                    <i class="cursor-pointer transition duration-150 ease-out hover:ease-in hover:text-[#d2b356] text-[mainCol] p-2 bx bxl-behance"><a href="#"></a
+            ></i>
+                    <i class="cursor-pointer transition duration-150 ease-out hover:ease-in hover:text-[#d2b356] text-[mainCol] p-2 bx bxl-instagram"><a href="#"></a
+            ></i>
+                    <i class="cursor-pointer transition duration-150 ease-out hover:ease-in hover:text-[#d2b356] text-[mainCol] p-2 bx bxl-linkedin"><a href="#"></a
+            ></i>
+                    <i class="cursor-pointer transition duration-150 ease-out hover:ease-in hover:text-[#d2b356] text-[mainCol] p-2 bx bxl-google-plus"><a href="#"></a
+            ></i>
+                </div>
+                <div class="">
+                    <i id="menBurger" class="bx bx-menu menBurger fade-in z-30 text-5xl cursor-pointer"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="scroller bg-[#d2b356] z-[7000] fixed left-0 top-0 w-0 h-2 rounded-2xl"></div>
+
+    <div class="w-[100%] mobileMenu absolute top-[73px] left-0 z-[1000] lg:hidden hidden transition-all h-0">
+        <ul class="text-center fade-in bg-gray-100 p-7">
+            <li class="p-3 hover:bg-gray-200 transition rounded-md">
+                <a href="#" class="p-7 text-[mainCol] scale-50">Home</a>
+            </li>
+            <li class="p-3 hover:bg-gray-200 transition rounded-md">
+                <a href="#" class="">About</a>
+            </li>
+            <li class="p-3 hover:bg-gray-200 transition rounded-md">
+                <a href="#" class="p-7">Gallery</a>
+            </li>
+            <li class="p-3 hover:bg-gray-200 transition rounded-md">
+                <a href="#" class="p-7">Services</a>
+            </li>
+            <li class="p-3 hover:bg-gray-200 transition rounded-md">
+                <a href="#" class="p-7">Testimonials</a>
+            </li>
+            <li class="p-3 hover:bg-gray-200 transition rounded-md">
+                <a href="#" class="p-7">clinents</a>
+            </li>
+            <li class="p-3 hover:bg-gray-200 transition rounded-md">
+                <a href="#" class="p-7">pricing</a>
+            </li>
+        </ul>
+    </div>
+    <!-- end header section -->
+
+    <main>
+
+        <!-- up elements -->
+        <div class="up fixed bottom-10 right-[-50px] bg-[#d2b356] text-white z-[1222] font-bold text-2xl p-2 rounded-xl font-mono cursor-pointer transition-all"><i class='bx bx-up-arrow-alt'></i></div>
+
+        <!-- start the landing section -->
+        <section id="home" class="main bg-cover bg-center bg-fixed w-[100%] h-[100vh] border-yellow-950 xl:px-40">
+            <div class="slide-right h-[73vh] flex justify-center flex-col px-[38px] sm:w-3/5 lg:w-2/5 lg:pt-[40px]">
+                <div class="">
+                    <h1 class="slide-right text-5xl pb-6 md:pb-8 md:text-[60px] lg:text-[70px] font-extrabold border-b-2">
+                        A FREE AND SIMPLE LANDING PAGE
+                    </h1>
+                    <p class="slide-right-slow font-light pb-9 pt-5">
+                        Namari is a free landing page template you can use for your projects. It is free to use for your personal and commercial projects, enjoy!
+                    </p>
+                </div>
+                <button class="slide-right-slow2 w-[230px] py-2 px-4  duration-150 ease-out border-black font-medium hover:text-[#d2b356] hover:border-[#d2b356] transition-all">
+            START CREATING TODAY
+          </button>
+            </div>
+        </section>
+        <!-- end the landing section -->
+
+        <!-- start About section -->
+        <section id="about" class="py-32 px-5 lg:px-40">
+            <div class="grid md:grid-cols-2">
+                <!-- the left side -->
+                <div class="leftSide1 pb-24 flex flex-col items-start justify-start">
+                    <p class="text-gray-400 slide-right-slow relative pb-3 YellowLine capitalize">success</p>
+                    <div class="w-3/5">
+                        <h2 class="pro slide-right-slow2 text-4xl font-semibold py-7 relative">
+                            How We Help You To Sell Your Product
+                        </h2>
+
+                        <p class="text-gray-400 slide-right-slow font-light">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!
+                        </p>
+                    </div>
+                </div>
+                <!-- the right side -->
+                <div class="grid md:grid-cols-2 md:gap-10 fade-in">
+                    <div class="py-7">
+                        <i class="bx bxl-html5 text-yellow-500 text-4xl"></i>
+                        <h2 class="uppercase font-semibold text-xl py-3 transition duration-150 ease-out hover:text-[#d2b356]
+                        ">html & css</h2>
+                        <p class="font-light">
+                            Has ne tritani atomorum conclusionemque, in dolorum volumus cotidieque eum. At vis choro neglegentur iudico
+                        </p>
+                    </div>
+                    <div class="py-7">
+                        <i class="bx bx-trending-up text-yellow-500 text-4xl"></i>
+                        <h2 class="hover:text-[#d2b356] transition duration-150 ease-out
+
+                        uppercase font-semibold text-xl py-3">Easy to Use</h2>
+                        <p class="font-light">
+                            Has ne tritani atomorum conclusionemque, in dolorum volumus cotidieque eum. At vis choro neglegentur iudico
+                        </p>
+                    </div>
+                    <div class="py-7">
+                        <i class="bx bx-tab text-yellow-500 text-4xl"></i>
+                        <h2 class="hover:text-[#d2b356] transition duration-150 ease-out
+                        uppercase font-semibold text-xl py-3">
+                            Fully Responsive
+                        </h2>
+                        <p class="font-light">
+                            Has ne tritani atomorum conclusionemque, in dolorum volumus cotidieque eum. At vis choro neglegentur iudico
+                        </p>
+                    </div>
+                    <div class="py-7">
+                        <i class="bx bx-rocket text-yellow-500 text-4xl"></i>
+                        <h2 class="hover:text-[#d2b356] transition duration-150 ease-out
+                        uppercase font-semibold text-xl py-3">
+                            Parallax Effect
+                        </h2>
+                        <p class="font-light">
+                            Has ne tritani atomorum conclusionemque, in dolorum volumus cotidieque eum. At vis choro neglegentur iudico
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end About section -->
+
+        <!-- start gallary section -->
+        <section id="gallery" class="about">
+            <div>
+                <div class="gallery flex-wrap justify-center lg:px-40 grid md:grid-cols-2 lg:grid-cols-3 gap-2">
+                    <div class="image-container slide-right-slow2 cursor-pointer">
+                        <img src="./images/gallery-image-1.jpg" class="max-w-[100%] h-auto hover:blur-sm" alt="Image 1" />
+                    </div>
+                    <div class="image-container slide-right-slow2 cursor-pointer">
+                        <img src="./images/gallery-image-2.jpg " class="max-w-[100%] h-auto hover:blur-sm" alt="Image 2" />
+                    </div>
+                    <div class="image-container slide-right-slow cursor-pointer">
+                        <img src="./images/gallery-image-3.jpg" class="max-w-[100%] h-auto hover:blur-sm" alt="Image 3" />
+                    </div>
+                    <div class="image-container slide-right-slow cursor-pointer">
+                        <img src="./images/gallery-image-4.jpg" class="max-w-[100%] h-auto hover:blur-sm" alt="Image 4" />
+                    </div>
+                    <div class="image-container slide-right cursor-pointer">
+                        <img src="./images/gallery-image-5.jpg" class="max-w-[100%] h-auto hover:blur-sm" alt="Image 5" />
+                    </div>
+                    <div class="image-container slide-right cursor-pointer">
+                        <img src="./images/gallery-image-6.jpg" class="max-w-[100%] h-auto hover:blur-sm" alt="Image 6" />
+                    </div>
+
+                    <!-- Add more image containers as needed -->
+                </div>
+                <div class="modal">
+                    <span class="close absolute top-[15px] right-[35px] text-[40px] text-white cursor-pointer">&times;</span
+            >
+            <img
+              class="modal-content m-auto block max-w-[80%] max-h-[80%]"
+              id="modal-image"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- end gallary section -->
+
+
+      <!-- start services section -->
+      <section id="services" class="">
+        <div class="grid md:grid-cols-3 gap-3 items-center lg:px-40 py-8">
+        <!-- quote side -->
+        <div class="flex px-4 slide-right-slow flex-col pb-20">
+          <p class="text-2xl font-extralight">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        
+
+            <h1 class="pt-6 slide-right-slow2">— John Doe, Happy Customer</h1>
+          </p>
+        </div>  
+        
+        <!-- believing side -->
+        <div class="leftSide1 px-4 pb-24 ">
+            <p class="text-gray-400 slide-right-slow pb-3 YellowLine   capitalize">BELIEVING</p>
+            <div class="">
+                <h2 class="pro text-4xl slide-right-slow2 font-semibold py-7 relative">
+                    Focusing On What Matters Most                </h2>
+
+                <p class="text-gray-400 slide-right-slow font-light">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!
+                </p>
+                <p  class="py-7 slide-right-slow">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                     </p> 
+                     <p class="pb-5 slide-right-slow2">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                    dolorem ipsum quia dolor sit amet! </p> 
+                  
+
+                    <button class="px-4 py-2 slide-right-slow hover:text-[#d2b356] transition duration-150 ease-out
+                    ">watch video</button>
+                </div>
+        </div>
+
+            <!-- img side -->
+            <div>
+                <img src="./images/dancer.jpg" alt="">
+            </div>
+
+            </div>
+
+
+        </section>
+        <!-- end services section -->
+
+        <!-- start customer section -->
+        <section id="Testimonials" class="lg:px-40 md:px-32 p-5">
+        <div class="top pb-24">
+            <p class="text-gray-400  YellowLine relative pb-3">FEEDBACK</p>
+            <h1 class="text-4xl font-medium pt-8">What our customers are saying</h1>
+        </div>
+
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 text-center gap-10">
+
+        <div class="flex flex-col px-4 slide-right-slow2 items-center justify-center">
+            <img src="./images/user-1.jpg" class="rounded-full w-1/2" alt="">
+            <p class="font-light text-xl py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <h2 class="pt-8">John Doe - Happy Customer</h2>
+        </div>
+
+        <div class="flex flex-col slide-right-slow items-center justify-center">
+            <img src="./images/user-2.jpg" class="rounded-full w-1/2" alt="">
+            <p class="font-light text-xl py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <h2 class="pt-8">John Doe - Happy Customer</h2>
+        </div>
+
+
+        <div class="flex flex-col slide-right items-center justify-center">
+            <img src="./images/user-3.jpg" class="rounded-full w-1/2" alt="">
+            <p class="font-light text-xl py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <h2 class="pt-8">John Doe - Happy Customer</h2>
+        </div>
+      
+        </div>
+
+        </section>
+        <!-- end customer section -->
+
+        <!-- start client section -->
+        <section id="clients">
+            <div class="px-5 grid md:grid-cols-2 gap-5 xl:px-40">
+                <!-- start left side -->
+                <div class="flex slide-right  items-center justify-center flex-col">
+                    <p class="text-gray-400 pb-3 YellowLine relative">TRUST US</p>
+                    <h1 class="text-4xl font-medium py-8">Companies who use our services</h1>
+                    <p class="text-gray-400 font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
+                </div>
+
+                <!-- start right side -->
+
+                <div class="grid sm:grid-cols-2 fade-in lg:grid-cols-3 py-20">
+                    <div class=" text-center hover:bg-[#d2b356] hover:text-white transition duration-150 ease-out py-20 ">
+                        <i class='bx bxs-tree-alt text-5xl hover:scale-125 transition-all'></i>
+                    </div>
+                   
+                    <div class=" text-center hover:bg-[#d2b356] hover:text-white transition duration-150 ease-out py-20 ">
+                        <i class='bx bx-fingerprint text-5xl hover:scale-125 transition-all' ></i>                    
+                    </div>
+                    <div class=" text-center hover:bg-[#d2b356] hover:text-white transition duration-150 ease-out py-20 ">
+                        <i class='bx bx-game text-5xl hover:scale-125 transition-all' ></i>                    
+                    </div>
+                    <div class=" text-center hover:bg-[#d2b356] hover:text-white transition duration-150 ease-out py-20 ">
+                        <i class='bx bx-face text-5xl hover:scale-125 transition-all' ></i>                    
+                    </div>
+                    <div class=" text-center hover:bg-[#d2b356] hover:text-white transition duration-150 ease-out py-20 ">
+                        <i class='bx bxs-cat text-5xl hover:scale-125 transition-all' ></i>                    
+                    </div>
+                    <div class=" text-center hover:bg-[#d2b356] hover:text-white transition duration-150 ease-out py-20 ">
+                        <i class='bx bx-adjust text-5xl hover:scale-125 transition-all'></i>                    
+                    </div>
+                    <div class=" text-center hover:bg-[#d2b356] hover:text-white transition duration-150 ease-out py-20 ">
+                        <i class='bx bx-basketball text-5xl hover:scale-125 transition-all' ></i>                
+                        </div>
+                    <div class=" text-center hover:bg-[#d2b356] hover:text-white transition duration-150 ease-out py-20 ">
+                        <i class='bx bx-color text-5xl hover:scale-125 transition-all'></i>                        
+                    </div>
+                    <div class=" text-center hover:bg-[#d2b356] hover:text-white transition duration-150 ease-out py-20 ">
+                        <i class='bx bxl-apple text-5xl hover:scale-125 transition-all' ></i>                        
+                    </div>    
+                </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end client section -->
+
+     <!-- start pricing section -->
+     <section id="pricing" class="flex items-center lg:py-20 py-7 md:py-12 justify-center bg-gray-100">
+        <div class="lg:px-20">
+         <div class="top text-center fade-in pb-10">
+            <p class="text-gray-400">YOUR CHOICE</p>
+            <h1 class="text-4xl font-medium">We have the right package for you</h1>
+        </div>   
+        
+            <div class="grid md:grid-cols-2 lg:gap-10 lg:grid-cols-3">
+          
+            <div class="text-center slide-right-slow2 p-4 m-3 bg-white">
+                <h2 class="font-bold text-xl uppercase text-[#d2b356]">Personal</h2>
+                <p class="text-gray-400 italic capitalize font-light">The standard version</p>
+
+                <div class="border-solid rounded-md bg-gray-100 py-10 mt-8 px-10">
+                    <h2 class="text-6xl font-bold">19 <span class="text-lg">$</span></h2>
+                    <p class="text-gray-400 italic font-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="mb-10 mt-2">
+                    <p class="py-5 border-dotted border-b-2">5 Downloads</p>
+                    <p class="py-5 border-dotted border-b-2">2 Extensions </p>
+                    <p class="py-5 border-dotted border-b-2">Tutorials</p>
+                    <p class="py-5 border-dotted border-b-2">Forum Support</p>
+                    <p class="py-5">1 year free updates</p>
+                </div>
+
+                <button class="px-4 py-2 hover:text-[#d2b356] transition duration-150 ease-out ">BUY TODAY</button>
+            </div>
+            <div class="text-center slide-right-slow scale-105 p-4 bg-white m-3">
+                <h2 class="font-bold text-2xl uppercase text-[#d2b356]">Student</h2>
+                <p class="text-gray-400 italic capitalize font-light">Most popular choice</p>
+
+                <div class="border-solid rounded-md bg-gray-300 text-white py-10 mt-8 px-10">
+                    <h2 class="text-6xl font-bold">29 <span class="text-lg">$</span></h2>
+                    <p class=" italic text-white font-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="mb-10 mt-2">
+                    <p class="py-5 border-dotted border-b-2">15 Downloads</p>
+                    <p class="py-5 border-dotted border-b-2">5 Extensions </p>
+                    <p class="py-5 border-dotted border-b-2">Tutorials with files</p>
+                    <p class="py-5 border-dotted border-b-2">Forum Support</p>
+                    <p class="py-5">2 year free updates</p>
+                </div>
+
+                <button class="px-4 py-2 hover:text-[#d2b356] transition duration-150 ease-out">BUY TODAY</button>
+            </div>
+            <div class="text-center slide-right p-4 bg-white m-3">
+                <h2 class="font-bold text-xl uppercase text-[#d2b356]">Personal</h2>
+                <p class="text-gray-400 italic capitalize font-light">The standard version</p>
+
+                <div class="border-solid rounded-md bg-gray-100 py-10 mt-8 px-10">
+                    <h2 class="text-6xl font-bold">19 <span class="text-lg">$</span></h2>
+                    <p class="text-gray-400 italic font-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="mb-10 mt-2">
+                    <p class="py-5 border-dotted border-b-2">5 Downloads</p>
+                    <p class="py-5 border-dotted border-b-2">2 Extensions </p>
+                    <p class="py-5 border-dotted border-b-2">Tutorials</p>
+                    <p class="py-5 border-dotted border-b-2">Forum Support</p>
+                    <p class="py-5">1 year free updates</p>
+                </div>
+
+                <button class="px-4 py-2 hover:text-[#d2b356] transition duration-150 ease-out">BUY TODAY</button>
+            </div>
+
+            </div>
+
+
+            </div>
+
+
+        </section>
+        <!-- end pricing section -->
+
+        <!-- start footer section -->
+        <section>
+
+            <footer class="bg-white ">
+                <div class="mx-auto w-full max-w-screen-xl">
+                    <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Company</h2>
+                            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class=" hover:underline">About</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Careers</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Brand Center</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Help center</h2>
+                            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Discord Server</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Twitter</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Facebook</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Legal</h2>
+                            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Privacy Policy</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Licensing</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Download</h2>
+                            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">iOS</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Android</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Windows</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">MacOS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="px-4 py-6 border-t-2 slide-right md:flex md:items-center md:justify-between">
+                        <span class="text-sm  sm:text-center">© 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights Reserved.</span>
+                        <div class="flex mt-4 space-x-5 sm:justify-center md:mt-0">
+                            <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                    </svg>
+                                <span class="sr-only">Facebook page</span>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                        <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                    </svg>
+                                <span class="sr-only">Discord community</span>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                </svg>
+                                <span class="sr-only">Twitter page</span>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                  </svg>
+                                <span class="sr-only">GitHub account</span>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+                </svg>
+                                <span class="sr-only">Dribbble account</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </section>
+        <!-- end footer section -->
+
+    </main>
+    <!-- vanilla javascript link -->
+    <script src="/app.js"></script>
+</body>
+
+</html>
