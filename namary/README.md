@@ -10,7 +10,7 @@ Namari is a static landing page for a startup company. It's implemented using HT
 - Tailwind CSS
 
 
-Namari Website Screenshot (https://github.com/rabab003/images/blob/main/tailwind%20css%20(1).png  , https://github.com/rabab003/images/blob/main/tailwind%20css%20(2).png)
+Namari Website Screenshot ( https://github.com/rabab003/images/blob/main/nam1%20(1).png  , https://github.com/rabab003/images/blob/main/nam1%20(2).png , https://github.com/rabab003/images/blob/main/nam1%20(3).png
 
 
 ## Credits
